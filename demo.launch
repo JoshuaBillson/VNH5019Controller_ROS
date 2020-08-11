@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="vnh5019_motor_controller" type="serial_transmitter" name="vnh5019_motor_controller" args="/dev/ttyACM0" />
+</launch>
