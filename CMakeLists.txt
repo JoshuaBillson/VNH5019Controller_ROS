@@ -11,10 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   key_teleop
 )
 
-
-## Uncomment this if the package has a setup.py. This macro ensures
+## Call setup.py
 catkin_python_setup()
-
 
 ## Generate messages in the 'msg' folder
 add_message_files(
