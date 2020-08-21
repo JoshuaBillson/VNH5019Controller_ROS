@@ -1,6 +1,4 @@
 <launch>
 	<arg name="port" />
-	<arg name="sensor_port" value="/dev/ttyUSB0" />
 	<node pkg="vnh5019_motor_controller" type="serial_transmitter" name="vnh5019_motor_controller" args="$(arg port)" />
-	<node pkg="rosserial_python" type="serial_node.py" name="serial_node_1" args="$(arg sensor_port)" />
 </launch>

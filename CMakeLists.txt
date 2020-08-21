@@ -7,6 +7,8 @@ find_package(catkin REQUIRED COMPONENTS
   message_runtime
   rospy
   std_msgs
+  geometry_msgs
+  key_teleop
 )
 
 
@@ -43,11 +45,13 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 install(PROGRAMS
   nodes/serial_transmitter
+  nodes/keyboard_teleop
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 install(FILES
   launch/serial.launch
+  launch/teleop.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
