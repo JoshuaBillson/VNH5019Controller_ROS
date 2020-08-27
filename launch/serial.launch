@@ -1,4 +1,0 @@
-<launch>
-	<arg name="port" />
-	<node pkg="vnh5019_motor_controller" type="serial_transmitter" name="vnh5019_motor_controller" args="$(arg port)" />
-</launch>

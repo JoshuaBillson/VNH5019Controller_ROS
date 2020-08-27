@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+from vnh5019_motor_controller.vnh5019_write_serial import vnh5019_write_serial
+
+if __name__ == "__main__":
+    vnh5019_write_serial() 
+

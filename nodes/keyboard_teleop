@@ -1,6 +1,0 @@
-#!/usr/bin/env python3
-
-from vnh5019_motor_controller.keyboard_teleop import keyboard_teleop
-
-if __name__ == "__main__":
-    keyboard_teleop() 

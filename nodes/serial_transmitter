@@ -1,6 +1,0 @@
-#!/usr/bin/env python3
-
-from vnh5019_motor_controller.serial_transmitter import serial_transmitter
-
-if __name__ == "__main__":
-    serial_transmitter() 
