@@ -9,15 +9,13 @@ the ROS development environment. The motors are controlled by publishing to the
 
 Writes to the motor controller over USB.  
 
-#### Parameters
-
-##### port
+#### Parameter: port
 
 Type: `string`  
 
 The serial port to which the motor controller is connected.  
 
-##### duty_cycle
+#### Parameter: duty_cycle
 
 Type: `float`  
 Default: `1.0`  
@@ -40,6 +38,11 @@ Publish to this topic to write a speed and turn value to the motor controller.
 # Messages
 
 ### MixedCommand
+
+```yaml
+int8: speed
+int8: turn
+```
 
 ##### speed
 
