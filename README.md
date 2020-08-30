@@ -8,10 +8,10 @@ the ROS development environment. The motors are controlled by publishing to the
 ### vnh5019_write_serial
 Writes to the motor controller over USB.  
 #### Parameters
-###### port
+##### port
 Type: `string`  
 The serial port to which the motor controller is connected.  
-###### duty_cycle
+##### duty_cycle
 Type: `float`  
 Default: `1.0`  
 The max duty cycle of the motors from 0 to 1. Useful for driving motors above their rated voltage.  
