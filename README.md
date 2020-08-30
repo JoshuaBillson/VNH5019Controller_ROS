@@ -7,15 +7,15 @@ the ROS development environment. The motors are controlled by publishing to the
 # <a name="Nodes"></a>Nodes
 ### vnh5019_write_serial
 Writes to the motor controller over USB.  
-##### Parameter - port
+#### Parameters
+###### port
 Type: `string`  
-Description: `The serial port to which the motor controller is connected.`  
-##### Parameter - duty_cycle
+The serial port to which the motor controller is connected.  
+###### duty_cycle
 Type: `float`  
 Default: `1.0`  
-Description: `The max duty cycle of the motors from 0 to 1. Useful for driving motors above their 
-rated voltage.`  
-##### Example
+The max duty cycle of the motors from 0 to 1. Useful for driving motors above their rated voltage.  
+#### Example
 ```
 rosrun vnh5019_motor_controller vnh5019_write_serial _port:="/dev/ttyACM0" _duty_cycle:=0.9
 ```
