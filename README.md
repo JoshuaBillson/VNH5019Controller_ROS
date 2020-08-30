@@ -15,12 +15,22 @@ rosrun vnh5019_motor_controller vnh5019_write_serial _port:="/dev/ttyACM0" _duty
 ```
 
 # <a name="Topics"></a>Topics
-**vnh5019_motor_controller (**[vnh5019_serial_controller/MixedCommand](#MixedCommand)**):** Publish to this 
-topic to write a speed and turn value to the motor controller.
+### vnh5019_motor_controller
+Type: `vnh5019_serial_controller/MixedCommand]`  
+Publish to this topic to write a speed and turn value to the motor controller.
 
-# <a name="MixedCommand"></a>vnh5019_serial_controller/MixedCommand
-**int8 speed:** A value from -100 (full reverse) to 100 (full forward).  
-**int8 turn:** A value from -100 (max left) to 100 (max right).
+# Messages
+### vnh5019_serial_controller/MixedCommand
+##### speed
+Type: `Int8`  
+Values: `-100 (full reverse) to 100 (full forward)`  
+##### turn
+Type: `Int8`  
+Values: `-100 (max left) to 100 (max right)` 
+##### Example
+```python
+msg = MixedCommand(speed=100, turn=0)
+```
 
 # Example
 ```python
